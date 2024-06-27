@@ -128,7 +128,7 @@ function Modal15() {
         </dialog>
       </div>
 
-      <form id="paymentForm15" action="https://test.payu.in/_payment" method="post" style={{ display: 'none' }}>
+      <form id="paymentForm15" action="https://secure.payu.in/_payment" method="post" style={{ display: 'none' }}>
         <input type="hidden" name="key" value={formValues.key} />
         <input type="hidden" name="txnid" value={formValues.txnid} />
         <input type="hidden" name="amount" value={formValues.amount} />
