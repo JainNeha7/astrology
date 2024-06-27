@@ -5,8 +5,8 @@ export async function POST(request) {
   try {
     const { txnid, phone, amount, productinfo, firstname, email } = await request.json();
     
-    const merchantKey = "buKFPp";
-    const salt = "UAnjoalqHOJrBtKjs1zDfaoOPUsyvBQu";
+    const merchantKey = "DQje3S";
+    const salt = "Y6p6t849WAgWFBnVjx1qoEyOAEAOnJr4";
 
     const hashString = `${merchantKey}|${txnid}|${amount}|${productinfo}|${firstname}|${email}|||||||||||${salt}`;
     const hash = crypto.createHash('sha512').update(hashString).digest('hex').toLowerCase();

@@ -90,7 +90,7 @@ function Modal20() {
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             </form>
             <h3 className="font-bold text-lg">Shalvik With Shiv Group Healing</h3>
-            <p className="py-4">Navgraha healing is a traditional practice in Hindu astrology that aims to balance the nine celestial bodies (navgrahas) in a person's horoscope. It involves rituals, mantras, and remedies to harmonize planetary influences, promoting health, prosperity, and well-being. 🌟🙏🪐✨</p>
+            <p className="py-4">"Join Shalvik with Shiva for a group healing session, where ancient wisdom meets modern energy work. Experience transformative healing and inner peace in a collective embrace. 🌟🧘‍♂️🙏</p>
             <div>
 
               <form className='space-y-4' onSubmit={handleSubmit}>

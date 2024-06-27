@@ -1146,12 +1146,13 @@ function BookingSection() {
                           type="radio"
                           name="rating-1"
                           className="mask mask-star"
-                          checked
+                          
                         />
                         <input
                           type="radio"
                           name="rating-1"
                           className="mask mask-star"
+                          checked
                         />
                       </div>
                     </div>
@@ -1179,7 +1180,7 @@ function BookingSection() {
 
               <div className="card my-4 card-compact w-96 bg-base-100 shadow-2xl">
                 <figure>
-                  <img src="/shalvik_healing_new1.jpeg" alt="card" style={{width:"300px",height:"300px",objectFit:"scale-down"}} />
+                  <img src="/LordShivaImage.jpeg" alt="card" style={{width:"300px",height:"300px",objectFit:"scale-down"}} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1199,7 +1200,7 @@ function BookingSection() {
                           type="radio"
                           name="rating-1"
                           className="mask mask-star"
-                          checked
+                          // checked
                         />
                         <input
                           type="radio"
@@ -1250,10 +1251,10 @@ function BookingSection() {
                   <div className="flex justify-between">
                     <div>
                       <h2 className="card-title text-2xl font-serif font-bold">
-                      Shalvik With Shiv Group
+                      Navgraha Healings
                       </h2>
                       <div className="border-b-4 mb-2 border-yellow-400 w-36 h-1"></div>
-                      <div className="rating ">
+                      <div className="rating">
                         <input
                           type="radio"
                           name="rating-1"
@@ -1263,7 +1264,7 @@ function BookingSection() {
                           type="radio"
                           name="rating-1"
                           className="mask mask-star"
-                          checked
+                          // checked
                         />
                         <input
                           type="radio"
@@ -1284,6 +1285,7 @@ function BookingSection() {
                       </div>
                     </div>
                     <div className=" ">
+                      <p style={{marginLeft:"10px"}}>One Month</p>
                       <div className="bg-orange-500 p-4 mr-4 mt-2 text-white font-bold text-lg rounded-full">
                         ₹32,500
                       </div>

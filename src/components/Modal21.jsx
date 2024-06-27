@@ -5,7 +5,7 @@ import axios from 'axios'
 function Modal21() {
 
   const [formValues, setFormValues] = useState({
-    productinfo: 'Shalvik with shiv group healing',
+    productinfo: 'Navgraha Healings',
     amount: '32500.00',
     firstname: '',
     name: '',
@@ -89,7 +89,7 @@ function Modal21() {
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             </form>
-            <h3 className="font-bold text-lg">Shalvik With Shiv Group Healing</h3>
+            <h3 className="font-bold text-lg">Navgraha Healings</h3>
             <p className="py-4">Navgraha healing is a traditional practice in Hindu astrology that aims to balance the nine celestial bodies (navgrahas) in a person's horoscope. It involves rituals, mantras, and remedies to harmonize planetary influences, promoting health, prosperity, and well-being. 🌟🙏🪐✨<p>price One month 32500/-</p></p>
             <div>
 
