@@ -20,21 +20,24 @@ function Modal20() {
     hash: '',
   });
 
-  // const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
+  const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
 
-  // useEffect(() => {
-  //   if (isReadyToSubmit) {
-  //     document.getElementById('paymentForm').submit();
-  //   }
-  // }, [isReadyToSubmit]);
+  useEffect(() => {
+    if (isReadyToSubmit) {
+      document.getElementById('paymentForm20').submit();
+    }
+  }, [isReadyToSubmit]);
 
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (formValues.firstname && formValues.email && formValues.phone && formValues.date) {
+
       const { amount, productinfo, firstname, email, phone } = formValues;
 
       try {
+
         const txnid = `TXN${Date.now()}`;
         const response = await axios.post('/api/payment', {
           txnid,
@@ -45,45 +48,29 @@ function Modal20() {
           phone,
         });
 
-        if (response.status !== 200) {
+        if (response.status !== parseInt(200)) {
           throw new Error('Failed to generate hash');
         }
 
         const { data } = response;
 
-        console.log('Response data:', data);
+        setFormValues((prevValues) => ({
+          ...prevValues,
+          key: data.merchantKey,
+          txnid,
+          hash: data.hash,
+        }));
+        setIsReadyToSubmit(true);
 
-        // Update form values and submit the form in the same step
-        setFormValues((prevValues) => {
-          const updatedValues = {
-            ...prevValues,
-            key: data.merchantKey,
-            txnid,
-            hash: data.hash,
-          };
-          // Trigger form submission here
-          setTimeout(() => {
-            document.getElementById('paymentForm').submit();
-          }, 2000);
-          return updatedValues;
-        });
       } catch (error) {
         console.error('Error:', error);
         alert('Failed to process payment. Please try again.');
       }
-    } else {
+    }
+    else {
       alert("Please fill out all required fields.");
     }
   }
-
-
-
-  // useEffect(() => {
-  //   if (formValues.hash && formValues.key && formValues.txnid) {
-  //     console.log('Updated formValues:', formValues);
-  //     setIsReadyToSubmit(true);
-  //   }
-  // }, [formValues]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -140,7 +127,7 @@ function Modal20() {
         </dialog>
       </div>
 
-      <form id="paymentForm" action="https://secure.payu.in/_payment" method="post" style={{ display: 'none' }}>
+      <form id="paymentForm20" action="https://secure.payu.in/_payment" method="post" style={{ display: 'none' }}>
         <input type="hidden" name="key" value={formValues.key} />
         <input type="hidden" name="txnid" value={formValues.txnid} />
         <input type="hidden" name="amount" value={formValues.amount} />

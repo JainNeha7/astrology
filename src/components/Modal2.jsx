@@ -54,7 +54,6 @@ function Modal2() {
     e.preventDefault();
 
     if (formValues.firstname && formValues.email && formValues.phone && formValues.date) {
-      console.log("button clicked");
 
       const { amount, productinfo, firstname, email, phone } = formValues;
 
