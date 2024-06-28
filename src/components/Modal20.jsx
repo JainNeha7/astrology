@@ -1,9 +1,9 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Modal20() {
-
   const [formValues, setFormValues] = useState({
     productinfo: 'Shalvik with shiv group healing',
     amount: '2222.00',
@@ -20,23 +20,21 @@ function Modal20() {
     hash: '',
   });
 
-  const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
+  // const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
 
-  useEffect(() => {
-    if (isReadyToSubmit) {
-      document.getElementById('paymentForm').submit();
-    }
-  }, [isReadyToSubmit]);
+  // useEffect(() => {
+  //   if (isReadyToSubmit) {
+  //     document.getElementById('paymentForm').submit();
+  //   }
+  // }, [isReadyToSubmit]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (formValues.firstname && formValues.email && formValues.phone && formValues.date) {
-
       const { amount, productinfo, firstname, email, phone } = formValues;
 
       try {
-
         const txnid = `TXN${Date.now()}`;
         const response = await axios.post('/api/payment', {
           txnid,
@@ -47,30 +45,45 @@ function Modal20() {
           phone,
         });
 
-        if (response.status !== parseInt(200)) {
+        if (response.status !== 200) {
           throw new Error('Failed to generate hash');
         }
 
         const { data } = response;
 
-        setFormValues((prevValues) => ({
-          ...prevValues,
-          key: data.merchantKey,
-          txnid,
-          hash: data.hash,
-        }));
-        setIsReadyToSubmit(true);
+        console.log('Response data:', data);
 
+        // Update form values and submit the form in the same step
+        setFormValues((prevValues) => {
+          const updatedValues = {
+            ...prevValues,
+            key: data.merchantKey,
+            txnid,
+            hash: data.hash,
+          };
+          // Trigger form submission here
+          setTimeout(() => {
+            document.getElementById('paymentForm').submit();
+          }, 2000);
+          return updatedValues;
+        });
       } catch (error) {
         console.error('Error:', error);
         alert('Failed to process payment. Please try again.');
       }
-    }
-    else {
+    } else {
       alert("Please fill out all required fields.");
     }
   }
 
+
+
+  // useEffect(() => {
+  //   if (formValues.hash && formValues.key && formValues.txnid) {
+  //     console.log('Updated formValues:', formValues);
+  //     setIsReadyToSubmit(true);
+  //   }
+  // }, [formValues]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -86,16 +99,14 @@ function Modal20() {
         <dialog id="my_modal_20" className="modal">
           <div className="modal-box">
             <form method="dialog" >
-              {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             </form>
             <h3 className="font-bold text-lg">Shalvik With Shiv Group Healing</h3>
             <p className="py-4">"Join Shalvik with Shiva for a group healing session, where ancient wisdom meets modern energy work. Experience transformative healing and inner peace in a collective embrace. 🌟🧘‍♂️🙏</p>
             <div>
-
               <form className='space-y-4' onSubmit={handleSubmit}>
 
-                <div >
+                <div>
                   <label className="block text-sm font-medium text-gray-700">Name</label>
                   <input type="text" id="name" name="firstname" value={formValues.firstname}
                     onChange={handleInputChange} required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
@@ -142,9 +153,8 @@ function Modal20() {
         <input type="hidden" name="service_provider" value={formValues.service_provider} />
         <input type="hidden" name="hash" value={formValues.hash} />
       </form>
-
     </>
-  )
+  );
 }
 
 export default Modal20;

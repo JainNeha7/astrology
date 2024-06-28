@@ -28,6 +28,26 @@ function Modal2() {
     }
   }, [isReadyToSubmit]);
 
+  const saveBookingToDatabase = async () => {
+    try {
+      const userData = {
+        Service: formValues.productinfo,
+        category: formValues.productinfo,
+        price: formValues.amount,
+        name: formValues.firstname,
+        email: formValues.email,
+        phone: formValues.phone,
+        date: formValues.date,
+      };
+      const dbRequest = await axios.post("/api/booking", userData);
+      console.log("Booking saved successfully:", dbRequest.data);
+      // alert("Form submission success, You will redirect to payment page soon");
+    } catch (error) {
+      console.error('Error saving booking to database:', error);
+      // alert("please fill the details properly")
+    }
+  };
+
 
   const handleSubmit = async (e) => {
 
@@ -67,6 +87,8 @@ function Modal2() {
       } catch (error) {
         console.error('Error:', error);
         alert('Failed to process payment. Please try again.');
+      }finally {
+        await saveBookingToDatabase();
       }
     }
     else {

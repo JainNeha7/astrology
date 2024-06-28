@@ -23,10 +23,10 @@ function Modal21() {
   const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
 
   useEffect(() => {
-    if (isReadyToSubmit) {
+    if (isReadyToSubmit && formValues.hash !== '') {
       document.getElementById('paymentForm').submit();
     }
-  }, [isReadyToSubmit]);
+  }, [isReadyToSubmit, formValues.hash]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
