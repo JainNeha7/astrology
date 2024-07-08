@@ -1180,14 +1180,14 @@ function BookingSection() {
 
               <div className="card my-4 card-compact w-96 bg-base-100 shadow-2xl">
                 <figure>
-                  <img src="/LordShivaImage.jpeg" alt="card" style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
+                  <img src="/newAstro.jpeg" alt="card" style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
                 </figure>
 
                 <div className="card-body ml-4">
                   <div className="flex justify-between">
                     <div>
                       <h2 className="card-title text-2xl font-serif font-bold">
-                        Shalvik With Shiv Group
+                      Maa Kali Group Healing
                       </h2>
                       <div className="border-b-4 mb-2 border-yellow-400 w-36 h-1"></div>
                       <div className="rating ">
