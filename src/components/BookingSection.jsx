@@ -1221,8 +1221,9 @@ function BookingSection() {
                       </div>
                     </div>
                     <div className=" ">
-                      <div className="bg-orange-500 p-4 mr-4 mt-2 text-white font-bold text-lg rounded-full">
-                        ₹2,222
+                    <p style={{ marginLeft: "10px" }}>Per Hour</p>
+                      <div className="bg-orange-500 px-4 py-2 mr-4 mt-2 text-white font-bold text-lg rounded-full">
+                        ₹1,111
                       </div>
                     </div>
                   </div>
