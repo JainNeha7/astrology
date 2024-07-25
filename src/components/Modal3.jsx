@@ -6,7 +6,7 @@ function Modal3() {
 
   const [formValues, setFormValues] = useState({
     productinfo: 'MEDIUMSHI',
-    amount: '8888.00',
+    amount: '6666.00',
     firstname: '',
     name: '',
     email: '',

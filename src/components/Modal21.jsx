@@ -6,7 +6,7 @@ function Modal21() {
 
   const [formValues, setFormValues] = useState({
     productinfo: 'Navgraha Healings',
-    amount: '32500.00',
+    amount: '24375.00',
     firstname: '',
     name: '',
     email: '',

@@ -6,7 +6,7 @@ function Modal2() {
 
   const [formValues, setFormValues] = useState({
     productinfo: 'Soul records through akashic Records Reading',
-    amount: '7777.00',
+    amount: '5832.75',
     firstname: '',
     name: '',
     email: '',

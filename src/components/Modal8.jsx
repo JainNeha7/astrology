@@ -7,7 +7,7 @@ function Modal8() {
 
   const [formValues, setFormValues] = useState({
     productinfo: 'PLANETRY SHIFTINGS HEALINGS',
-    amount: '5555.00',
+    amount: '4166.25',
     firstname: '',
     name: '',
     email: '',

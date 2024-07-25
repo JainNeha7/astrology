@@ -6,7 +6,7 @@ function Modal4() {
 
   const [formValues, setFormValues] = useState({
     productinfo: 'PAST LIFE REGRESSIONS ONLINE/OFFLINE',
-    amount: '8888.00',
+    amount: '4166.25',
     firstname: '',
     name: '',
     email: '',

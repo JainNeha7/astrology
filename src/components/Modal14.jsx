@@ -7,7 +7,7 @@ function Modal14() {
 
   const [formValues, setFormValues] = useState({
     productinfo: 'Holistic Treatement for Anxiety',
-    amount: '35333.00',
+    amount: '26499.75',
     firstname: '',
     name: '',
     email: '',
