@@ -41,7 +41,7 @@ function Navbar() {
       <div className="navbar  justify-between shadow-xl bg-yellow-200 rounded-lg  flex-auto ">
       
     <Image src="/logo.png" width={100} height={100} alt='logo' className='ml-8  -m-3'></Image>
-    <div classNamestart='md:flex font-semibold  px-8 '>
+    <div className='md:flex font-semibold  px-8 '>
     
   
      <div className=" dropdown dropdown-hover">

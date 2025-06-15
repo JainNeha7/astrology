@@ -55,7 +55,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/tarot.jpg" alt="card"   width={300}  />
+                  <Image src="/tarot.jpg" alt="card"  height={300} width={300}  />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -135,7 +135,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/soulrecord.png" alt="card" width={300}  />
+                  <Image src="/soulrecord.png" alt="card" height={300} width={300}  />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -208,7 +208,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/MEDIUMSHIP.png" alt="card" width={300} />
+                  <Image src="/MEDIUMSHIP.png" alt="card" width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -280,7 +280,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/pastlife.png" alt="card" width={300}  />
+                  <Image src="/pastlife.png" alt="card" width={300} height={300}  />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -353,7 +353,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/lamafhera.png" alt="card"  width={300} />
+                  <Image src="/lamafhera.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -429,7 +429,7 @@ function BookingSection() {
                   <Image
                     src="/humakara.jpeg"
                     alt="card"
-                    className="w-4/6 0 -my-8" width={300} 
+                    className="w-4/6 0 -my-8" width={300} height={300} 
                   />
                 </figure>
 
@@ -504,7 +504,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/markeshhealing.png" alt="card"  width={300} />
+                  <Image src="/markeshhealing.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -578,7 +578,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/planetry.png" alt="card"  width={300} />
+                  <Image src="/planetry.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -650,7 +650,7 @@ function BookingSection() {
               <div className="card my-4 card-compact w-96 bg-base-100 shadow-2xl">
            
                 <figure>
-                  <Image src="/sadesati.png" alt="card" width={300}  />
+                  <Image src="/sadesati.png" alt="card" width={300} height={300}  />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -723,7 +723,7 @@ function BookingSection() {
       {/*    <div className="card my-4 card-compact w-96 bg-base-100 shadow-2xl">
      
               <figure>
-               <Image src="/shivsakti1.png" alt="card" width={300}  />
+               <Image src="/shivsakti1.png" alt="card" width={300} height={300}  />
               </figure>
 
               <div className="card-body ml-4">
@@ -796,7 +796,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/shivsakti.png" alt="card"  width={300} />
+                  <Image src="/shivsakti.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -872,7 +872,7 @@ function BookingSection() {
 {/*   <div className="card my-4 card-compact w-96 bg-base-100 shadow-2xl">
 
                 <figure>
-                  <Image src="/shivsakti.png" alt="card" width={300} />
+                  <Image src="/shivsakti.png" alt="card" width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -951,7 +951,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/yogmaya.png" alt="card" width={300}  />
+                  <Image src="/yogmaya.png" alt="card" width={300} height={300}  />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1025,7 +1025,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/maabaglamati.png" alt="card"  width={300} />
+                  <Image src="/maabaglamati.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1099,7 +1099,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/Anxietytreatments.png" alt="card" width={300} />
+                  <Image src="/Anxietytreatments.png" alt="card" width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1175,7 +1175,7 @@ function BookingSection() {
                 <figure>
                   <Image
                     src="/Spiritualtreatmentforconceptualpregnancy.png"
-                    alt="card" width={300} 
+                    alt="card" width={300} height={300} 
                   />
                 </figure>
 
@@ -1249,7 +1249,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/cancer.png" alt="card" width={300}  />
+                  <Image src="/cancer.png" alt="card" width={300} height={300}  />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1321,7 +1321,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/vasudha.png" alt="card"  width={300} />
+                  <Image src="/vasudha.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1395,7 +1395,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/vastuhealing.png" alt="card" width={300} />
+                  <Image src="/vastuhealing.png" alt="card" width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1468,7 +1468,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/physicaltreatment.png" alt="card"  width={300} />
+                  <Image src="/physicaltreatment.png" alt="card"  width={300} height={300} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1546,7 +1546,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/newAstro.jpeg" alt="card" width={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
+                  <Image src="/newAstro.jpeg" alt="card" width={300} height={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1622,7 +1622,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/shalvik_healing_new1.jpeg" alt="card" width={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
+                  <Image src="/shalvik_healing_new1.jpeg" alt="card" width={300} height={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1695,7 +1695,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/p234.jpeg" alt="card" width={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
+                  <Image src="/p234.jpeg" alt="card" width={300} height={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
                 </figure>
 
                 <div className="card-body ml-4">
@@ -1765,7 +1765,7 @@ function BookingSection() {
     Holi Offer  
   </div>  */}
                 <figure>
-                  <Image src="/p334.jpeg" alt="card" width={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
+                  <Image src="/p334.jpeg" alt="card" width={300} height={300}  style={{ width: "300px", height: "300px", objectFit: "scale-down" }} />
                 </figure>
 
                 <div className="card-body ml-4">
